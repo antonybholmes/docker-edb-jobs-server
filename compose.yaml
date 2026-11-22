@@ -12,7 +12,7 @@ services:
     env_file:
       - ./.env
     volumes:
-      - /logs/logs:/app/logs
+      - ./data/logs/logs:/app/logs
   edb-jobs-crispr-server:
     container_name: edb-jobs-crispr-server
     profiles:
@@ -26,4 +26,4 @@ services:
     env_file:
       - ./.env
     volumes:
-      - /logs/logs:/app/logs
+      - ./data/logs/logs:/app/logs
