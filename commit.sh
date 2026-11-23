@@ -36,8 +36,6 @@ done
 echo "${type}: ${msg}"
 echo ${branch}
 
-#pnpm update-version
-
 # commit
 git add -A .
 git commit -m "${type}: ${msg}"

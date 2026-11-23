@@ -43,7 +43,7 @@ COPY --from=build-stage /etc/ssl/certs/ca-certificates.crt /etc/ssl/certs/
 COPY --from=build-stage /app/edb-jobs-crispr-server edb-jobs-crispr-server
 
 # aux files needed by app
-COPY --from=build-stage /app/templates/ ./templates/
+COPY --from=build-stage /app/scripts/crispr.py ./scripts/crispr.py
 # COPY --from=build-stage /app/consts.env consts.env
 COPY --from=build-stage /app/version.json version.json
 
