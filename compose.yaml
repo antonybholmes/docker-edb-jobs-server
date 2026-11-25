@@ -13,17 +13,17 @@ services:
       - ./.env
     volumes:
       - ./data/logs:/app/logs
-  edb-jobs-crispr-server:
-    container_name: edb-jobs-crispr-server
-    profiles:
-      - prod
-      - dev
-    build:
-      context: .
-      ssh:
-        - default
-      dockerfile: edb-jobs-crispr-server/Dockerfile
-    env_file:
-      - ./.env
-    volumes:
-      - ./data:/app/data
+  # edb-jobs-crispr-server:
+  #   container_name: edb-jobs-crispr-server
+  #   profiles:
+  #     - prod
+  #     - dev
+  #   build:
+  #     context: .
+  #     ssh:
+  #       - default
+  #     dockerfile: edb-jobs-crispr-server/Dockerfile
+  #   env_file:
+  #     - ./.env
+  #   volumes:
+  #     - ./data:/app/data
