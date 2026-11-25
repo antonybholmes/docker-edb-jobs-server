@@ -15,7 +15,6 @@ set -o allexport
 source .env
 set +o allexport
 
-# start postgres
 docker compose up -d --no-deps --build edb-jobs-server
-docker compose up -d --no-deps --build edb-jobs-crispr-server
+#docker compose up -d --no-deps --build edb-jobs-crispr-server
  

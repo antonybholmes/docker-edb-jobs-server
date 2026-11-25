@@ -1,1 +1,1 @@
-docker stop $(docker ps -a -q)
+docker stop edb-job-server
